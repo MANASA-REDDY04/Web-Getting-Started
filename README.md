@@ -1,7 +1,7 @@
 ## MERN stack
 
 ### Contents
-- Basic terms
+- Introduction to web
 - HTML5
 - CSS3
 - Mongo DB
