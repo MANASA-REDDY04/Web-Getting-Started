@@ -94,6 +94,7 @@ Ex:- Artiel , jio etc..
 
 ![osi/tcp Model](osi-tcp.png)
 
-More info -> Research on Network System 
+More info -> Research on Network System.
+
 learn how a packet travells. 
 
