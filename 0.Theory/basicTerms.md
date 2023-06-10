@@ -69,7 +69,8 @@ Ex. (Chrome(Google), Safari(Apple), Firefox, Opera)
 **DNR** [Domain Name Resolution] : It convert domain name into IP address.
 facebook.com -> 30.50.6.1.0
 
-**ISP** [Internet Service Provider] : client req -> ISP -> Internet
+**ISP** [Internet Service Provider] : client req -> ISP -> Internet.
+
 Ex:- Artiel , jio etc..
 
 **Packets** : Data trasfers from one system to another in form of small chunks called Packets.
@@ -94,4 +95,5 @@ Ex:- Artiel , jio etc..
 ![osi/tcp Model](osi-tcp.png)
 
 More info -> Research on Network System 
+learn how a packet travells. 
 
