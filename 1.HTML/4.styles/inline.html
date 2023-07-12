@@ -1,0 +1,46 @@
+<!-- 
+    12-04-2023
+
+    Style information can either be attached as a separate document or embedded in the HTML document itself. 
+
+Inline styles — Using the style attribute in the HTML start tag.
+Embedded style — Using the <style> element in the head section of the document.
+External style sheet — Using the <link> element, pointing to an external CSS files.
+(Refer word document for external)
+
+The inline styles have the highest priority, and the external style sheets have the lowest. 
+
+if you specify styles for your paragraphs in both embedded and external style sheets,
+the conflicting style rules in the embedded style sheet would override the external style sheet.
+ -->
+
+<!-- 
+    INLINE STYLES
+
+    <tag_name style = "property : value; property: value;"> some text </tag>
+
+        but it  is bad practice because HTML contents and style presentation are mixed in a document.
+        difficult to update & maintain a web browser.
+
+        and also psuedo elements and pseudo classes cannot be done via inline styles.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Inline-style</title>
+</head>
+
+<body>
+    <h1 style="color: crimson; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">This is styles</h1>
+    <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eligendi vero dolor
+        recusandae dolore? Repellat iste aliquam velit, iusto animi hic commodi ratione. Autem quia numquam suscipit,
+        iusto itaque magni labore recusandae molestias saepe. Dicta repellat repudiandae tenetur soluta at commodi
+        nostrum corrupti veniam aliquid doloremque, quasi earum illum nulla.</p>
+</body>
+
+</html>

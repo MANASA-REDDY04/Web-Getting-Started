@@ -1,0 +1,130 @@
+<!-- A link or hyperlink is a connection from one web resource to another. 
+Links allow users to move seamlessly from one page to another, 
+on any server anywhere in the world.
+
+A link has two ends, called anchors. The link starts at the source anchor 
+and points to the destination anchor, which may be any web resource, 
+for example, an image, an audio or video clip, a PDF file, 
+an HTML document or an element within the document itself, and so on.
+
+By default, links will appear as follows in most of the browsers:
+
+An unvisited link is underlined and blue.
+A visited link is underlined and purple.
+An active link is underlined and red.
+However, you can overwrite this using CSS.  
+-->
+
+<!-- 
+    Links are specified in HTML using the <a> tag.
+
+    HTML Link Syntax :-    <a href="url">Link text</a>
+
+    Anything between the opening <a> tag and the closing </a> tag 
+    becomes the part of the link that the user sees and clicks in a browser.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+</head>
+
+<body>
+    <h1> Welcome to the Page </h1>
+    <p> Here you can get accessed to all your favorite wesites</p>
+
+    <a href="https://www.google.com/">google</a>
+    <br>
+    <a href="https://www.instagram.com/">instagram</a>
+    <br>
+    <a href="https://www.github.com/">github</a>
+    <br>
+    <a href="https://www.netflix.com/">netflix</a>
+    <br>
+
+
+    <!-- 
+        Accessing Links via images
+     -->
+    <a href="https://www.amazon.com"><img
+            src="https://m.media-amazon.com/images/G/31/social_share/amazon_logo._CB633266945_.png " alt="amazon logo"
+            width="150"></a>
+
+    <a href="https://www.flipkart.com"><img
+            src="https://yt3.googleusercontent.com/cT40lDWqE99Ch52R3ftuAExjmjF-yZiY5rUSv_0Q3NXhcqzmiax8ReXuS4Qe53Fizcaw4hEX=s900-c-k-c0x00ffffff-no-rj"
+            alt="flipkart logo" width="70"></a>
+
+    <!-- TYPES OF LINKS
+
+        The href attribute specifies the target of the link. Its value can be an absolute or relative URL.
+
+        An absolute URL is the URL that includes every part of the URL format, such as protocol, host name, and path of the document, e.g., https://www.google.com/, https://www.example.com/form.php, etc.
+
+        relative URLs are page-relative paths, e.g., contact.html, images/smiley.png, and so on. 
+        
+        A relative URL never includes the http:// or https:// prefix.
+     -->
+
+    <!-- 
+        SETTING TARGET FOR LINKS
+
+        The target attribute tells the browser where to open the linked document.
+
+        _blank — Opens the linked document in a new window or tab.
+        _parent — Opens the linked document in the parent window.
+        _self — Opens the linked document in the same window or tab as the source document. (default)
+        _top — Opens the linked document in the full browser window.
+
+        _parent and _top are used in case of iframes (nested frames).
+      -->
+    <h2> TARGET LINKS</h2>
+    <a href="https://www.netflix.com/" target="_blank">blank tag</a><br>
+    <a href="https://www.netflix.com/">self tag</a><br>
+
+    <!-- CREATING BOOKMARK ANCHORS
+        allows users to jump to a specific section of a web page.
+        Bookmarks are especially helpful if you have a very long web page.
+
+        Creating bookmarks is a two-step process: 
+        first add the id attribute on the element where you want to jump, then use that id attribute value preceded by the hash sign (#) as the value of the href attribute of the <a> tag, as shown in the following example:
+ -->
+    <br>
+    <h2>Bookmarks</h2>
+    <a href="#SectionA">⭐jump to SectionA</a><br>
+    <a href="#SectionB">⭐jump to SectionB</a><br>
+    <a href="#SectionC">⭐jump to SectionC</a><br>
+    <a href="#notes">⭐jump to notes</a><br>
+
+    <h2 id="SectionA">SectionA</h2>
+    <p>Lorem, ipsum dolor sit amet,<br> consectetur adipisicing elit. Praesentium laudantium,<br> voluptas ea minus quaerat
+        eveniet <br>consequatur, necessitatibus <br>omnis enim nostrum at aut sint<br> corrupti neque culpa quidem debitis
+        incidunt quae odit<br> ipsa corporis deserunt.<br> Alias ad in consequatur<br>vero nesciunt eligendi laborum<br>
+        corrupti ratione exercitationem.</p>
+
+    <h2 id="SectionB">SectionB</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Totam minima ab, a itaque porro repudiandae unde
+        delectus, recusandae<br><br><br> ipsam doloremque aliquid quaerat impedit <br><br><br><br> molestias nulla voluptatum? Officiis
+        delectus, recusandae<br><br><br> ipsam doloremque aliquid quaerat impedit <br><br><br><br> molestias nulla voluptatum? Officiis
+        blanditiis doloribus repellendus accusamus. Alias<br> praesentium ducimus nam quia,<br> officiis eligendi
+        possimus aliquid atque sint minus nobis voluptatem libero similique ea porro!</p>
+
+    <h2 id="SectionC">SectionC</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eos. Voluptatibus eius, nemo eos rerum magni quia
+        delectus fuga in provident, perferendis ducimus eaque quos ipsam. Molestiae cumque, ducimus accusamus vel ipsam
+        alias, quod consequatur laudantium repellat eum voluptate magnam.</p>
+
+        <!-- You can even jump to a section of another web page by specifying the URL of that page along with the anchor (i.e. #elementId) in the href attribute, for example, 
+            <a href="mypage.html#topicA">Go to TopicA</a> 
+        -->
+
+    <a href="sample.html#Para1" target="_blank">Go to para1</a>
+
+    <p id="notes"><a href="Daa notes.pdf" target="_blank">Notes</a></p>
+</body>
+
+</html>

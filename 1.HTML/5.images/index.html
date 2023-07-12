@@ -1,0 +1,81 @@
+<!-- 
+    12-04-2023
+    IMAGES
+
+    <img> tag is used to display images on web pages.
+    it is an empty tag.
+    
+    syntax:- 
+    <img src="image_url" alt="some text if image not found">
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Images</title>
+</head>
+
+<body>
+   <h1>Web developer</h1>
+   <p>A web developer should be strong with basic languages like HTML, CSS and some
+      script languages
+   </p>
+   <img src="image.jpg" alt="web developer image">
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto repellat ducimus vel tempore nam
+      corrupti sunt aspernatur. Natus voluptas odit optio velit provident illum error totam quae animi? Doloremque,
+      reprehenderit necessitatibus impedit cum dolor pariatur optio dolores minus velit iste tempore itaque vitae
+      deserunt tempora dolore aspernatur nobis aliquid?</p>
+
+   <!-- 
+        The above image may look like gross taking the whole page to display.
+        well, here are some attributes that may help your image to look better
+
+        width , height
+
+        <img src="url" alt="text" width="100px" height="50px">
+     -->
+   <img src="image.jpg" alt="image not found" width="200px" height="150px">
+
+   <!-- 
+        you may set any of one width or height the other one is set automatically,
+        but it is not good practice as it may cause problems browser can allocate that much of space for the image before it is downloaded. Otherwise, image loading may cause distortion or flicker(blinking image) in your website layout.
+      -->
+
+   <!-- 
+        HTML5 PICTURE ELEMENT
+
+        scaling an image up or down to fit different devices (or screen sizes) doesn't work as expected. Also, reducing the image dimension using the width and height attribute or property doesn't reduce the original file size. To address these problems HTML5 has introduced the <picture> tag that allows you to define multiple versions of an image to target different types of devices.
+
+        The <picture> element contains zero or more <source> elements, each referring to different image source, and one <img> element at the end. Also each <source> element has the media attribute which specifies a media condition (similar to the media query) that is used by the browser to determine when a particular source should be used.
+       -->
+
+   <picture>
+      <source media="(min-width: 1000px)" srcset="image.jpg">
+      <source media="(max-width: 500px)" srcset="small.png">
+      <img src="default.png" alt="not found">
+   </picture>
+
+   <!-- 
+        The browser will evaluate each child <source> element and choose the best match among them; if no matches are found, the URL of the <img> element's src attribute is used. Also, the <img> tag must be specified as the last child of the <picture> element.
+        -->
+
+   <!-- 
+            IMAGE MAPS
+
+            An image map is an image with clickable areas.
+         -->
+   <img src="objects.png" usemap="#objects" alt="Objects">
+   <map name="objects">
+      <area shape="circle" coords="137,231,71" href="clock.html" target="_blank" alt="Clock">
+      <area shape="poly" coords="363,146,273,302,452,300" href="sign.html" target="_blank" alt="Sign">
+      <area shape="rect" coords="520,160,641,302" href="book.html" target="_blank" alt="Book">
+   </map>
+   <!-- 
+    The image map should not be used for website navigation. They are not search engine friendly. A valid use of an image map is with a geographical map.
+ -->
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic paragraph tags</title>
+</head>
+
+<body>
+    <!-- PARAGRAPH
+    Browsers built-in style sheets, automatically create some space above and below the content of a paragraph (called margin), but you can override it using CSS.
+    -> works with simply an open tag also.. <p> hello there 
+        but not advisable , better practice to use both open and closing tag
+    -->
+
+    <p>hello this is my first paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, nam minus ut
+        recusandae numquam nesciunt rem harum. Vitae et quibusdam fuga impedit magni perspiciatis, corporis assumenda
+        suscipit, blanditiis accusamus aut.</p>
+    <p>hello this is my second paragraph. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempore,
+        excepturi dolore, dignissimos unde eveniet itaque incidunt eligendi, facilis doloribus esse aspernatur aperiam
+        saepe consectetur?</p>
+
+    <!-- LINE BREAK (Empty tag :- they don't require closing tag)-->
+    <p>hello everyone <br> how are you doing?</p>
+
+    <!-- HORIZONTAL LINES -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        <hr> Ea nam qui odit architecto sequi adipisci atque cupiditate pariatur illum,
+        <hr> aut in iure recusandae error inventore quos dolorem. Repellendus, fuga minus?
+    </p>
+
+    <!-- MANAGING WHITE SPACES -->
+
+    <!-- Web browser displays the multiple white spaces / tab spaces in HTML  a single, 
+    it ignores all the multiple spaces and show them as single space.
+    Similarly with line breaks in paragrpah it won't show any until and unless you use <br> -->
+
+    <!-- TRY OUT THE SAMPLE CODE  -->
+    <p>This paragraph contains multiple spaces in the source code.</p>
+    <p>
+        This paragraph
+        contains multiple tabs and line breaks
+        in the source code.
+    </p>
+
+    <!-- Insert &nbsp; for creating extra consecutive spaces, 
+        while insert <br> tag for creating line breaks on your web pages, 
+        as demonstrated in the following example: -->
+
+    <p>This paragraph has multiple&nbsp;&nbsp;&nbsp;spaces.</p>
+    <p>This paragraph has multiple<br><br>line<br><br><br>breaks.</p>
+
+
+    <!--DEFINING PRE-FORMATTED TEXT -->
+
+    <!-- Sometimes using &nbsp; and <br> is not very convienent instead we can use <pre> tag.
+        In order to display a piece of text as it is, we use pre tag.
+     -->
+     <pre>
+
+        This        is written
+ 
+        Using  pre
+ 
+        Tag
+ 
+     </pre>
+
+     <!--  Above text will get rendered as it is -->
+
+     <!-- DIV & SPAN CONTAINERS -->
+
+     <!-- 
+        The Div tag
+
+        div tag is often used as a container for other elements.
+        div is a block-level element. [Always takes full width]
+
+ 
+        The span tag
+
+        span is an inline container. [Takes as much width as necessary]
+      -->
+
+      <div>This is some text.</div>
+      <span>This is some another text.</span>
+</body>
+
+</html>

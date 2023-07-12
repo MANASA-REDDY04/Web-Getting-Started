@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tables</title>
+</head>
+<!-- 
+    Do not use tables to create web page layouts, create them to only display tabular data.
+ -->
+
+<body>
+    <!-- 
+        <table> is used to create tables.
+            <th> -> table heading/col name
+            <td> -> table data/data cells
+            <tr> -> table rows
+        attributes like border, cellpadding, cellspacing are not supported in HTML5
+        use CSS.
+     -->
+    <table border="1" cellpadding="10" cellspacing="1">
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Manasa</td>
+            <td>IT</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Adithi</td>
+            <td>IT</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Abhi</td>
+            <td>IT</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 
+        ROW & COLOUMN SPANNING
+
+        rowspan: use to merge two or more rows into a single row.
+        colspan: use to merge two or more col's into a single col's.
+     -->
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Manasa</td>
+            <td rowspan="3">IT</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Adithi</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Abhi</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Section</th>
+        </tr>
+        <tr>
+            <td>Manasa</td>
+            <td colspan="2">IT-'A'</td>
+        </tr>
+        <tr>
+            <td>Adithi</td>
+            <td colspan="2">IT-'A'</td>
+        </tr>
+        <tr>
+            <td>Abhi</td>
+            <td colspan="2">IT-'A'</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!-- 
+        Title for Table
+
+        <caption> is used to add title for tables.
+     -->
+    <table border="1" cellpadding="10" cellspacing="1">
+        <caption>Friends</caption>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Manasa</td>
+            <td>IT</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Adithi</td>
+            <td>IT</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Abhi</td>
+            <td>IT</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <br><br>
+    <!-- 
+        Defining a Table Header, Body, and Footer
+        
+        HTML provides a series of tags <thead>, <tbody>, and <tfoot> that helps you to create more structured table, by defining header, body and footer regions, respectively.
+     -->
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Items</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Stationary</td>
+                <td>2,000</td>
+            </tr>
+            <tr>
+                <td>Furniture</td>
+                <td>10,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td>12,000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+</head>
+<body>
+    <!-- 
+        - HTML provides web developers three ways for specifying list information
+        - all list may contain one or more list elements
+        
+         <ul> - unorderd list 
+         <ol> - ordered list
+         <dl> - description list
+
+        - list items are added inside these tags using <li> tag.
+     -->
+
+     <!-- UNORDERD LIST
+        bullets list_item
+          types :- disc , circle , square
+        default - disc -->
+        <ul>
+            <li>apple</li>
+            <li>orange</li>
+            <li>Banana</li>
+        </ul>
+        <br>
+        <ul type = "circle">
+            <li>apple</li>
+            <li>orange</li>
+            <li>Banana</li>
+        </ul>
+          <br>  
+        <!-- 
+            ORDERED LISTS
+            types: i,a,A,I,1
+            default: numbers
+         -->
+         <ol>
+            <li>apple</li>
+            <li>orange</li>
+            <li>Banana</li>
+         </ol>
+
+         <br>
+         <!-- you can use start attribute to change the starting count of the numbers -->
+         <ol start="5">
+            <li>apple</li>
+            <li>orange</li>
+            <li>Banana</li>
+         </ol>
+         <br>
+
+         <ol type="I">
+            <li>apple</li>
+            <li>orange</li>
+            <li>Banana</li>
+         </ol>
+         <br>
+         <!--  Not recommended to use types
+        use CSS properties instead-->
+
+        <!-- 
+            DESCRPTION LIST
+            The <dl> element is used in conjunction with the <dt> element which specify a term, and the <dd> element which specify the term's definition.
+
+            Browsers usually render the definition lists by placing the terms and definitions in separate lines, where the term's definitions are slightly indented. Here's an example:
+
+         -->
+         <dl>
+            <dt>Bread</dt>
+            <dd>A baked food made of flour.</dd>
+            <dt>Coffee</dt>
+            <dd>A drink made from roasted coffee beans.</dd>
+        </dl>
+</body>
+</html>

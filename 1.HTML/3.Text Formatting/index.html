@@ -1,0 +1,114 @@
+<!-- Types of text formatting
+     10-04-2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Text formatting</title>
+</head>
+
+<body>
+    <h1>Types of Text formatting</h1>
+
+    <p> Hello! I'am <b>Bold text..</b> try out any time!</p>
+    <p>This is <strong>strongly important text</strong>.</p>
+
+    <!-- Difference between <strong> and <b> tag 
+        <strong> tag indicates that its contents have strong importance, whereas the <b> tag is simply used to draw the reader's attention without conveying any special importance.
+    -->
+    <p><strong>WARNING!(using strong)</strong> Please proceed with caution.</p>
+    <p>The concert will be held at <b>Hyde Park(using bold)</b> in London.</p>
+    <br>
+    <hr><br>
+
+
+    <p> Hello! I'am <i>Italic text..</i>try out any time!</p>
+    <p>This is <em>emphasized text</em>.</p>
+    <!--Difference between <em> and <i> tag
+        <em> tag indicates that its contents have stressed emphasis compared to surrounding text, whereas the <i> tag is used for marking up text that is set off from the normal text for readability reasons, such as a technical term, an idiomatic phrase from another language, a thought, etc.
+    -->
+    <p>Cats are <em>cute(em)</em> animals.</p>
+    <p>The <i>Royal Cruise(i)</i> sailed last night.</p>
+    <br>
+    <hr><br>
+
+    <!--  
+        Use the <em> and <strong> tags when the content of your page requires that certain words or phrases should have strong emphasis or importance. Also, in HTML5 the <b> and <i> tags have been redefined, earlier they don't have semantic meaning. -->
+
+    <p> Hello! I'am <ins>Underlined text..</ins>try out any time!</p>
+    <!-- you can also use <u> fo underline -->
+
+    <p> Hello! I'am <del>deleted one</del></p>
+    <p> Hello! I'am <mark>The High-lighted One!</mark></p>
+    <p> Hello! I'am <code>the code one!</code></p>
+    <p> Hello! I'am the super<sup>script</sup></p>
+    <p> Hello! I'am the sub<sub>script</sub></p>
+    <p> Hello! I'am the <small>smaller one</small></p>
+
+
+    <!-- FORMATTING QUOTATIONS -->
+
+    <!--    <blockquote>
+        You can easily format the quotation blocks from other sources with the HTML <blockquote> tag.
+
+        Blockquotes are generally displayed with indented left and right margins,
+        along with a little extra space added above and below.
+     -->
+
+    <!-- 
+        <cite>
+            The cite tag is used to describe a reference to a creative work. 
+            It must include the title of that work or the name of the author (people or organization) or an URL reference.
+     -->
+    <blockquote>
+            Tommorow might be <b>good</b> or <b>bad</b>, it is up to you..
+            weather you control it.. or it controls you...
+        <cite> &mdash;Niklaus Mikaelson</cite>
+    </blockquote>
+
+    <!-- 
+        INLINE QUOTE vs NORMAL QUOTE
+
+        INLINE QUOTE : <q> </q>
+
+        NORMAL QUOTE : "some text"    
+    -->
+    <p> <q>Health is a state of complete physical</q></p>
+    <p>hello i'am manasa "how was your day?"</p>
+
+
+    <!-- SHOWING ABBREVIATIONS
+        <abbr> tag is used to denote an abbreviation. 
+            The title attribute is used inside this tag to provide the full expansion of the abbreviation,
+            which is displayed by the browsers as a tooltip when the mouse cursor is hovered over the element. 
+    -->
+
+    <p>The <abbr title="World Wide Web">WWW</abbr> is used as prefix in every website.</p>
+
+    <!-- FORMATTING ADDRESS / MARKING CONTACT ADDRESS -->
+
+    <!-- 
+        Web pages often include street or postal addresses. 
+        <address> is used to represent information for a person, people or organization.
+
+    This tag should ideally used to display contact information related to the document itself, such as article's author.
+     Most browsers display an address block in italic. 
+     -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit soluta ipsum harum doloribus
+        necessitatibus voluptatem earum, quos consequuntur aliquid. Minima animi neque obcaecati quis voluptates
+        provident eos veritatis dolores numquam, tempora nam necessitatibus, eum perferendis! Ab perferendis facere nemo
+        iure nesciunt, aliquid perspiciatis accusamus quo, aut accusantium vel quos.</p>
+
+    <address>
+        1-96 , Thimmaipally<br>
+        Keesara , Medchal<br>
+        Telangana - 501301
+    </address>
+</body>
+
+</html>

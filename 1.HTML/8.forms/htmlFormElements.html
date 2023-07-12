@@ -1,0 +1,199 @@
+<!-- 
+    FORMS
+    HTML Forms are required to collect different kinds of user inputs, such as contact details like name, email address, phone numbers, or details like credit card information, etc..
+
+    Forms contain special elements called controls like inputbox, checkboxes, radio-buttons, submit buttons, etc. 
+    
+    Users generally complete a form by modifying its controls e.g. entering text, selecting items, etc. and submitting this form to a web server for further processing.
+
+    <form> tag is used to create HTML forms.
+
+        INPUT ELEMENT
+
+        It allows you to specify various types of user input fields, depending on the type attribute. An input element can be of type text field, password field, checkbox, radio button etc..
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <!-- 
+    TEXT FIELD
+ -->
+    <form>
+      <label for="username">Username : </label>
+      <input type="text" name="user-name" id="username" />
+    </form>
+    <br />
+    <!-- 
+    PASSWORD
+ -->
+    <form>
+      <label for="pswrd">Password : </label>
+      <input type="password" name="password" id="pswrd" />
+    </form>
+    <br />
+    <!-- 
+    Radio Buttons
+ -->
+    <form>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="others" />
+      <label for="others">Others</label>
+    </form>
+    <br />
+    <!-- 
+    Check Boxes
+-->
+    <form>
+      <input type="checkbox" name="courses" id="web" />
+      <label for="web">Web Development</label>
+      <input type="checkbox" name="courses" id="java" />
+      <label for="java">Java</label>
+      <input type="checkbox" name="courses" id="devops" />
+      <label for="devops">DevOps</label>
+    </form>
+    <br />
+    <!-- 
+        File
+     -->
+    <form>
+      <label for="file">Upload : </label>
+      <input type="file" name="file" id="file" />
+    </form>
+    <br />
+    <!-- 
+        Text area
+     -->
+    <form>
+      <label for="address">Address : </label>
+      <textarea name="address" id="address" cols="20" rows="3"></textarea>
+    </form>
+    <br />
+    <!-- Select boxes -->
+    <form>
+      <label for="city">City : </label>
+      <select name="city" id="city">
+        <option value="hyd">Hyderabad</option>
+        <option value="sec">Secunderabad</option>
+        <option value="kes">Keesara</option>
+      </select>
+    </form>
+    <br />
+    <!-- selected attribute in select boxes -->
+    <form>
+      <label for="branch">Branch : </label>
+      <select name="branch" id="branch">
+        <option value="cse">CSE</option>
+        <option value="it">IT</option>
+        <option value="ece">ECE</option>
+        <option value="eee" selected>EEE</option>
+        <option value="mech">MECH</option>
+      </select>
+    </form>
+    <br />
+    <!-- Visible Values:
+    Use the size attribute to specify the number of visible values: 
+
+    multiple attribute allows us to select multiple options
+    hold down ctrl to select multiple options.
+    -->
+    <form>
+      <label for="courses">courses</label>
+      <select name="courses" id="courses" size="3" multiple>
+        <option value="wt">Web technologies</option>
+        <option value="daa">Design and analysis of algorithms</option>
+        <option value="os">Operating Systems</option>
+        <option value="caalp">computer architecture</option>
+        <option value="dt">Design Thinking</option>
+      </select>
+    </form>
+    <br />
+    <!-- 
+        Optgroup
+     -->
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+    <br>
+    <br>
+    <!-- 
+        submit & reset
+     -->
+    <form>
+      <label for="name">First-Name : </label>
+      <input type="text" name="name" id="name" />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+    <br />
+    <!-- 
+        Button
+     -->
+    <button type="button">Click me</button>
+    <br />
+    <br />
+    <!-- Datalist
+    The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+Users will see a drop-down list of the pre-defined options as they input data.
+
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+    -->
+    <form>
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="google"></option>
+        <option value="safari"></option>
+        <option value="firefox"></option>
+        <option value="opera"></option>
+        <option value="bing"></option>
+      </datalist>
+      <input type="submit" />
+    </form>
+    <br />
+    <!-- 
+        Grouping
+     -->
+    <form>
+      <fieldset>
+        <legend>Username</legend>
+        <label for="fname">First-Name : </label>
+        <input type="text" name="fname" id="fname" />
+        <label for="lname">Last-Name : </label>
+        <input type="text" name="lname" id="lname" />
+      </fieldset>
+      <fieldset>
+        <legend>Password</legend>
+        <label for="pswrd">Password : </label>
+        <input type="password" name="pswrd" id="pswrd" />
+        <label for="cpswrd">Confirm Password : </label>
+        <input type="password" name="cpswrd" id="cpswrd" />
+      </fieldset>
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label for="mail">Email : </label>
+        <input type="email" name="mail" id="mail" />
+        <label for="tp">Work Number : </label>
+        <input type="tel" name="phno" id="tp" />
+        <label for="phone">Phone Number : </label>
+        <input type="phone" name="phone" id="phone" />
+      </fieldset>
+    </form>
+  </body>
+</html>
